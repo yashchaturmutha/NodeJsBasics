@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Get Image</h1>
+    <%= typeof msg != 'undefined' ? msg : '' %>
+    <br><br>
+
+    <form method="GET" enctype="multipart/form-data" action="/upload/:getname">
+        
+        <!-- <input type="text" name="getname" placeholder="Name..."> -->
+        <!-- <button type="submit" class="btn">Get Image</button> -->
+    
+    <!-- <br><br> -->
+    
+    <img src=" <%= typeof file != 'undefined' ? file : '' %> " 
+    style="width:200px; height: 200px">
+    </form>
+
+</body>
+</html>
