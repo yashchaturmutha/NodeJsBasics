@@ -10,12 +10,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json());
 // const paypal=require('paypal-rest-sdk');
 
-// paypal.configure({
-//     'mode':'sandbox',
-//     'client_id':'AXRFQZX3oUjSV4DIJZx7xj3y6XIApojZxNQLQnC3hwliOP1BVVE1JTLPGQ0zHpkz76coji4H0FcVinxP',
-//     'client_secret':'EMBhG0Mpba_H-kK5LD3r0uKiIMkCfpEgEAr550py9jZneurAdVlZxiwTxFw36jE_TS9Gn5qRpSmZkmH1'
-// })
-
 const PORT = 4000 || process.env.PORT;
 
 // app.post('/pay', (req, res) => {
