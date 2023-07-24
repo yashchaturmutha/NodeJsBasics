@@ -1,0 +1,23 @@
+{
+  "name": "payment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "pkg":{
+    "scripts": "utils/**/*.js",
+    "assets": "config/**/*",
+    "targets": [ "node14-linux-arm64" ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.5",
+    "nodemon": "^2.0.22",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}
